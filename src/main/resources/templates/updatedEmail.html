@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Updated Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h3 {
+            color: #4CAF50; /* Green color */
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #ffffff; /* White background for list items */
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        strong {
+            color: #555; /* Dark gray for labels */
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777; /* Light gray for footer text */
+        }
+        .header {
+            background-color: #e7f4e4; /* Light green background */
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h3>Welcome, <span th:text="${name}">[Name]</span>!</h3>
+	<p>Your account details have been updated. Please find your updated details below:</p>
+    
+    <h4>User Details:</h4>
+    <ul>
+        <li><strong>Name:</strong> <span th:text="${name}">[Name]</span></li>
+        <li><strong>Email:</strong> <span th:text="${email}">[Email]</span></li>
+        <li><strong>Phone Number:</strong> <span th:text="${phoneNumber}">[Phone Number]</span></li>
+        <li><strong>UserName:</strong> <span th:text="${userName}">[UserName]</span></li>
+        <li><strong>Password:</strong> <span th:text="${password}">[Password]</span></li>
+        <li><strong>Role:</strong> <span th:text="${role}">[Role]</span></li>
+        <li><strong>Is Active:</strong> true</li>
+    </ul>
+    
+    <p>Thank you for registering with us!</p>
+</body>
+</html>
